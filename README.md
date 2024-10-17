@@ -13,9 +13,7 @@ android.os.TransactionTooLargeException: data parcel size 535656 bytes Bundle st
 Any developer knows about bundles and their size limitations, but despite this, we repeatedly encounter the insidious TransactionTooLargeException. But there is a solution! Introducing, BundleSaver!
 
 ### How to solve the problem of large data in Bundle?
-The problem can arise in large applications with deeply nested screens and complex states. When a Binder transaction exceeds 1 MB, a TransactionTooLargeException will occur.
-
-### How does it work?
+The problem can arise in large applications with deeply nested screens and complex states. When a Binder transaction exceeds 1 MB, a TransactionTooLargeException will occur. What to do?
 1. In onSaveInstanceState, serialize the bundle into a set of bytes and write it to disk (and Map).
 2. In onRestoreInstanceState, deserialize it back into a bundle and restore the state.
 3. Upon exiting the screen, delete the file.
