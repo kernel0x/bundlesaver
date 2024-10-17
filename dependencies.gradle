@@ -1,0 +1,9 @@
+ext.versions = [
+        minSdk            : 24,
+        compileSdk        : 34,
+        libraryVersion    : '1.0.0',
+        libraryVersionCode: 1,
+
+        androidxFragment  : '1.5.1',
+        kotlin            : '1.6.21',
+]

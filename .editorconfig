@@ -1,0 +1,14 @@
+root = true
+
+[*.{kt,kts,java,yml,json,proto}]
+trim_trailing_whitespace = true
+insert_final_newline = false
+ij_kotlin_allow_trailing_comma = false
+ij_kotlin_allow_trailing_comma_on_call_site = false
+
+[*.{kt,kts,java}]
+indent_size = 4
+max_line_length = 120
+
+[*.{yml,json,proto}]
+indent_size = 2
