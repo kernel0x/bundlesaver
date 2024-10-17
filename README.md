@@ -55,14 +55,17 @@ class App : Application() {
 
 Next, you should add the following to each of your Activities (Important! The order must be exactly like this!).
 ````java
-override fun onCreate(savedInstanceState: Bundle?) {
-    BundleManager.restoreInstanceState(this, savedInstanceState)
-    super.onCreate(savedInstanceState)
-}
+class MainActivity : Activity() {
 
-override fun onSaveInstanceState(outState: Bundle) {
-    super.onSaveInstanceState(outState)
-    BundleManager.saveInstanceState(this, outState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        BundleManager.restoreInstanceState(this, savedInstanceState)
+        super.onCreate(savedInstanceState)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        BundleManager.saveInstanceState(this, outState)
+    }
 }
 ````
 
