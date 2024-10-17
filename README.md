@@ -44,7 +44,13 @@ dependencies {
 
 Initialize an instance of BundleManager (preferably in the Application's onCreate() method)
 ````java
-BundleManager.initialize(this)
+class App : Application() {
+
+    override fun onCreate() {
+        super.onCreate()
+        BundleManager.initialize(this)
+    }
+}
 ````
 
 Next, you should add the following to each of your Activities (Important! The order must be exactly like this!).
