@@ -13,11 +13,7 @@ import java.util.concurrent.Executors
 const val DEFAULT_BUNDLE_SIZE_LIMIT_BYTES = 524288 // 512 КБ
 
 /**
- * A collection of helper methods to assist you in debugging crashes due to
- * [android.os.TransactionTooLargeException].
- *
- * The easiest way to use this class is to call [.initialize] in your app's
- * [Application.onCreate] method.
+ * A object for avoiding [android.os.TransactionTooLargeException] in Runtime
  */
 object BundleManager {
 
