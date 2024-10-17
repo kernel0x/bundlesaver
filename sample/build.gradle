@@ -30,6 +30,6 @@ android {
 
 dependencies {
     debugImplementation project(':library')
-    //implementation 'com.github.kernel0x.bundlesaver:bundlesaver:1.0.0'
+    //implementation "com.github.kernel0x:bundlesaver:1.0.0"
     implementation "androidx.fragment:fragment:$versions.androidxFragment"
 }

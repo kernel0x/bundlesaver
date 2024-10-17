@@ -36,7 +36,7 @@ dependencyResolutionManagement {
 Add it in your App module build.gradle:
 ````java
 dependencies {
-    implementation 'com.github.kernel0x.bundlesaver:library:1.0.0'
+    implementation "com.github.kernel0x:bundlesaver:1.0.0"
 }
 ````
 
